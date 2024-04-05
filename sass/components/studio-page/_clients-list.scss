@@ -1,0 +1,35 @@
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.clients__item {
+    display: flex;
+    justify-content: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-size: contain;
+    padding: 16px 32px;
+    background-size: contain;
+    fill: #AFB1B8;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);  
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+}

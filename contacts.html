@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="shortcut icon" href="/images/WSLogo.png" type="image/png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <!-- Logo -->
+                <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+                <!-- Navigation -->
+                <ul class="header-nav__navigation">
+                    <li><a class="header-nav__link" href="./index.html">Studio</a></li>
+                    <li><a class="header-nav__link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="header-nav__link current" href="./contacts.html">Contacts</a></li>
+                </ul>
+                <div class="header-nav__contacts">
+                    <a class="header-nav__contacts--item" href="info@devstudio.com">
+                        <svg class="header-nav__icon" width="16" height="12">
+                            <use href="./images/icons.svg#mailIcon"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                    <a class="header-nav__contacts--item" href="tel:+380961111111">
+                        <svg class="header-nav__icon" width="10" height="16">
+                            <use href="./images/icons.svg#phoneIcon"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </div>  
+            </nav>
+        </div>
+    </header>
+        <!-- Main -->
+        <main>
+            <section class="section no-padding-bottom no-padding-top">
+                <div class="contacts__thumb">
+                    <h2 class="contacts__title">Wanna chat with customer service?</h2>
+                    <p class="contacts__text">Call <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></p>
+                    <p class="contacts__text">Monday-Friday: 9am-5pm</p>
+                <br>
+                    <h2 class="contacts__title">Wanna return to Home Page?</h2>
+                    <a class="contacts__link" href="./index.html">Click here</a>
+                    <img src="./images/smile.jpeg" alt="smile" width="270">
+                </div> 
+                </section>
+        </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__blocks">
+    <!-- Logo -->
+        <div class="logo-address-block">
+            <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio--footer">Studio</span></a>
+    <!-- Address -->
+            <address class="footer-address-block">
+                    <p class="footer__address">Kyiv, 26 Lesi Ukrainky Ave</p>
+                    <a class="footer__item email" href="info@devstudio.com">info@devstudio.com</a> <br>
+                    <a class="footer__item" href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
+        </div>
+    <!-- Follow Us -->
+            <div class="follow-us-block">
+                <strong class="follow__title">FOLLOW US</strong>
+                <ul class="follow__list">
+                    <li class="follow__item">
+                        <a href="instagram.com">
+                            <svg class="social__icon">
+                                <use href="./images/icons.svg#instagramIcon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="follow__item">
+                        <a href="twitter.com">
+                            <svg class="social__icon">
+                                <use href="./images/icons.svg#twitterIcon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="follow__item">
+                        <a href="facebook.com">
+                            <svg class="social__icon">
+                                <use href="./images/icons.svg#facebookIcon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="follow__item">
+                        <a href="linkedin.com">
+                            <svg class="social__icon">
+                                <use href="./images/icons.svg#linkedinIcon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+     <!-- Subscribe -->
+            <div class="subscribe-block">
+                <strong class="follow__title">SUBSCRIBE TO THE NEWSLETTER</strong>
+                <form class="subscribe__form">
+                    <label for="user-email">
+                      <input id="user-email" class="subscribre__input" type="email" name="email" placeholder="E-mail" required autocomplete="off" />
+                    </label>
+                    <button class="subscribe__button" type="submit">Subscribe
+                        <svg class="send__icon" width="24" height="24">
+                            <use href="./images/icons.svg#sendIcon"></use>
+                        </svg>
+                    </button>
+                  </form>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.footer {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__blocks {
+ 
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-bottom: 0;
+    }
+}
+
+.logo__address__follow__block {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
