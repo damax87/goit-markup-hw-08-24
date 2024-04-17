@@ -1,0 +1,130 @@
+.mobile__menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 48px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    z-index: 100;
+ 
+    overflow: hidden;
+  
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+    
+.mobile__menu--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        }
+   
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile__menu--close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.mobile__menu--list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    gap: 32px;
+}
+
+.mobile__menu--item {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1,2;
+    letter-spacing: 1px;
+
+    &.current {
+        color: var(--accent-color);
+    }
+}
+
+.mobile__contacts--list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 32px;
+}
+
+.mobile__contacts--item {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1,2;
+    letter-spacing: 1px;
+    color: #757575;
+
+    &.current {
+        color: var(--accent-color);
+        font-size: 34px;
+    }
+}
+
+.mobile__social--list {
+    display: flex;
+}
+
+.mobile__social--item {
+    display: flex;
+    color: var(--accent-color);
+
+    &:not(:last-child):after {
+        content: '';
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
+
+    &:hover, 
+    &:focus {
+        text-decoration: underline;
+    }
+}

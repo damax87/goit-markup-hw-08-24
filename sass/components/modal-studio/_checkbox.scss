@@ -1,11 +1,8 @@
 .checkbox__label {
     display: flex;
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
     justify-content: center;
     align-items: center;
-    text-align: center;
     gap: 4px;
 }
 
@@ -34,4 +31,5 @@
 .text__agreement {
     color: var(--accent-color);
     text-decoration: underline;
+    font-size: 14px;
 }

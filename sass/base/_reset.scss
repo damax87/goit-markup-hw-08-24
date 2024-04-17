@@ -1,6 +1,11 @@
 html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
+body.modal-open {
+    overflow: hidden;
+}
 
 *, 
 *::before,
@@ -12,6 +17,7 @@ a {
     text-decoration: none;
     padding: 0;
     margin: 0;
+    
 }
 
 a:visited {

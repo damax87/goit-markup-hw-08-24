@@ -3,6 +3,7 @@
 }
 
 .advantages__list {
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -11,26 +12,26 @@
 }
 
 .advantages__item {
+    max-width: 450px;
     margin-bottom: 30px;
 
     &:last-child {
         margin-bottom: 0;
     }
-    
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
-        width: 354px;
+        max-width: 354px;
     }
     @media screen and (min-width: 1200px) {
-        width: 270px;
+       max-width: 270px;
     }
 }
 
 .advantages__icon {
 
-    width: 450px;
+    width: 100%;
     height: 120px;
-    padding: 25px 100px;
+    padding: 25px;
     background-color: var(--background-secondary-color);
     border-radius: 4px;
     margin-bottom: 30px;

@@ -16,57 +16,102 @@
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 <body>
-    <!--Header-->
-    <header class="header">
-        <div class="container">
-            <nav class="header-nav">
-                <!-- Logo -->
-                <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
-                <!-- Navigation -->
-                <ul class="header-nav__navigation">
-                    <li><a class="header-nav__link" href="./index.html">Studio</a></li>
-                    <li><a class="header-nav__link" href="./portfolio.html">Portfolio</a></li>
-                    <li><a class="header-nav__link current" href="./contacts.html">Contacts</a></li>
-                </ul>
-                <div class="header-nav__contacts">
-                    <a class="header-nav__contacts--item" href="info@devstudio.com">
-                        <svg class="header-nav__icon" width="16" height="12">
-                            <use href="./images/icons.svg#mailIcon"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                    <a class="header-nav__contacts--item" href="tel:+380961111111">
-                        <svg class="header-nav__icon" width="10" height="16">
-                            <use href="./images/icons.svg#phoneIcon"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </div>  
-            </nav>
+<!--Header-->
+<header class="header">
+    <div class="container">
+        <nav class="header-nav">
+    <!-- Logo -->
+            <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+            <button mobile-menu-open type="button" class="mobile__menu--button">
+                <svg class="mobile__menu--icon" width="24" height="16">
+                    <use href="./images/icons.svg#mobileMenuIcon"></use>
+                </svg>
+            </button>
+    <!-- MOBILE MENU -->
+        <div class="mobile__menu is-hidden" mobile-menu>
+            <button mobile-menu-close class="mobile__menu--close">
+                <svg class="mobile__close--icon" width="19" height="19">
+                    <use href="./images/icons.svg#closeIcon"></use>
+                </svg>
+            </button>
+            <ul class="mobile__menu--list">
+                <li class="mobile__menu--item">
+                    <a href="./index.html">Studio</a>
+                </li>
+                <li class="mobile__menu--item">
+                    <a href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobile__menu--item current">
+                    <a href="./contacts.html">Contacts</a>
+                </li>
+            </ul>
+            <div class="mobile__contacts--list">
+                <a class="mobile__contacts--item current" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+                <a class="mobile__contacts--item" href="info@devstudio.com">
+                    info@devstudio.com</a>
+            </div>
+            <ul class="mobile__social--list">
+                <li class="mobile__social--item">
+                    <a href="">Instagram</a>
+                </li>
+                <li class="mobile__social--item">
+                    <a href="">Twitter</a>
+                </li>
+                <li class="mobile__social--item">
+                    <a href="">Facebook</a>
+                </li>
+                <li class="mobile__social--item">
+                    <a href="">LinkedIn</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    <!-- Navigation -->
+            <ul class="header-nav__navigation">
+                <li><a class="header-nav__link" href="./index.html">Studio</a></li>
+                <li><a class="header-nav__link" href="./portfolio.html">Portfolio</a></li>
+                <li><a class="header-nav__link current" href="./contacts.html">Contacts</a></li>
+            </ul>
+            <div class="header-nav__contacts">
+                <a class="header-nav__contacts--item" href="mailto:info@devstudio.com">
+                    <svg class="header-nav__icon" width="16" height="12">
+                        <use href="./images/icons.svg#mailIcon"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                <a class="header-nav__contacts--item" href="tel:+380961111111">
+                    <svg class="header-nav__icon" width="10" height="16">
+                        <use href="./images/icons.svg#phoneIcon"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+            </div>  
+        </nav>
+    </div>
+        </header>
         <!-- Main -->
         <main>
             <section class="section no-padding-bottom no-padding-top">
                 <div class="contacts__thumb">
                     <h2 class="contacts__title">Wanna chat with customer service?</h2>
-                    <p class="contacts__text">Call <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></p>
+                    <p class="contacts__text">Call: <a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></p>
                     <p class="contacts__text">Monday-Friday: 9am-5pm</p>
                 <br>
                     <h2 class="contacts__title">Wanna return to Home Page?</h2>
                     <a class="contacts__link" href="./index.html">Click here</a>
-                    <img src="./images/smile.jpeg" alt="smile" width="270">
+                    <img src="./images/smile.jpg" alt="smile" width="270">
                 </div> 
                 </section>
         </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer__blocks">
+            <div class="logo__address__follow__block">
     <!-- Logo -->
         <div class="logo-address-block">
             <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio--footer">Studio</span></a>
     <!-- Address -->
             <address class="footer-address-block">
                     <p class="footer__address">Kyiv, 26 Lesi Ukrainky Ave</p>
-                    <a class="footer__item email" href="info@devstudio.com">info@devstudio.com</a> <br>
+                    <a class="footer__item email" href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
                     <a class="footer__item" href="tel:+380961111111">+38 096 111 11 11</a>
             </address>
         </div>
@@ -75,28 +120,28 @@
                 <strong class="follow__title">FOLLOW US</strong>
                 <ul class="follow__list">
                     <li class="follow__item">
-                        <a href="instagram.com">
+                        <a href="http://instagram.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#instagramIcon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="follow__item">
-                        <a href="twitter.com">
+                        <a href="http://twitter.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#twitterIcon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="follow__item">
-                        <a href="facebook.com">
+                        <a href="http://facebook.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#facebookIcon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="follow__item">
-                        <a href="linkedin.com">
+                        <a href="http://linkedin.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#linkedinIcon"></use>
                             </svg>
@@ -104,12 +149,13 @@
                     </li>
                 </ul>
             </div>
+        </div>
      <!-- Subscribe -->
             <div class="subscribe-block">
-                <strong class="follow__title">SUBSCRIBE TO THE NEWSLETTER</strong>
+                <strong class="subscribe_title">SUBSCRIBE TO THE NEWSLETTER</strong>
                 <form class="subscribe__form">
                     <label for="user-email">
-                      <input id="user-email" class="subscribre__input" type="email" name="email" placeholder="E-mail" required autocomplete="off" />
+                      <input id="user-email" class="subscribre__input" type="email" name="email" placeholder="E-mail" required autocomplete="on" />
                     </label>
                     <button class="subscribe__button" type="submit">Subscribe
                         <svg class="send__icon" width="24" height="24">
@@ -120,5 +166,6 @@
             </div>
         </div>
         </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

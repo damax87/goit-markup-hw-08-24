@@ -35,7 +35,8 @@
 }
 
 .subscribre__input {
-    width: 450px;
+    min-width: 300px;
+    max-width: 450px;
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -51,6 +52,10 @@
     &:hover,
     &:focus {
         border: var(--accent-color) solid 1px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
     }
 
     @media screen and (min-width: 1200px) {

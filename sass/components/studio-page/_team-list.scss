@@ -12,8 +12,8 @@
 
 .team__item {
     margin-bottom: 30px;
-    width: 450px;
-    height: 622px;
+    max-width: 450px;
+    
     &:last-child {
         margin-bottom: 0;
     }
@@ -49,17 +49,27 @@
     }
 }
 
-.team__img {
-    width: 450px;
-    height: 460px;
+.team__img.team__img--mobile {
 
     @media screen and (min-width: 768px) {
-        width: 354px;
-        height: 374px;
+        display: none;
+    }
+}
+
+.team__img.team__img--tablet {
+
+    @media screen and (max-width: 767px) {
+        display: none;
     }
     @media screen and (min-width: 1200px) {
-        width: 270px;
-        height: 260px;
+        display: none;
+    }
+}
+
+.team__img.team__img--desktop {
+
+    @media screen and (max-width: 1199px) {
+        display: none;
     }
 }
 

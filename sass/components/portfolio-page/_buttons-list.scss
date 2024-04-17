@@ -1,12 +1,26 @@
 .buttons__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
     gap: 8px;
-   
+    max-width: 300px;
+
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding-bottom: 50px;
+    }
 }
 
 .buttons__item {
     cursor: pointer;
+    color: #212121;
     background-color: var(--background-secondary-color);
     font-family: inherit;
     font-weight: 500;

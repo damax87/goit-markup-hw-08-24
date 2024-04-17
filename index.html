@@ -20,16 +20,60 @@
     <header class="header">
 <div class="container">
     <nav class="header-nav">
-        <!-- Logo -->
+<!-- Logo -->
         <a class="logo" href="./index.html"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
-        <!-- Navigation -->
+        <button mobile-menu-open type="button" class="mobile__menu--button" aria-label="Mobile Menu Button">
+            <svg class="mobile__menu--icon" width="24" height="16">
+                <use href="./images/icons.svg#mobileMenuIcon"></use>
+            </svg>
+        </button>
+<!-- MOBILE MENU -->
+    <div class="mobile__menu is-hidden" mobile-menu>
+        <button mobile-menu-close class="mobile__menu--close">
+            <svg class="mobile__close--icon" width="19" height="19">
+                <use href="./images/icons.svg#closeIcon"></use>
+            </svg>
+        </button>
+        <ul class="mobile__menu--list">
+            <li class="mobile__menu--item current">
+                <a href="./index.html">Studio</a>
+            </li>
+            <li class="mobile__menu--item">
+                <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile__menu--item">
+                <a href="./contacts.html">Contacts</a>
+            </li>
+        </ul>
+        <div class="mobile__contacts--list">
+            <a class="mobile__contacts--item current" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            <a class="mobile__contacts--item" href="info@devstudio.com">
+                info@devstudio.com</a>
+        </div>
+        <ul class="mobile__social--list">
+            <li class="mobile__social--item">
+                <a href="">Instagram</a>
+            </li>
+            <li class="mobile__social--item">
+                <a href="">Twitter</a>
+            </li>
+            <li class="mobile__social--item">
+                <a href="">Facebook</a>
+            </li>
+            <li class="mobile__social--item">
+                <a href="">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+<!-- Navigation -->
         <ul class="header-nav__navigation">
             <li><a class="header-nav__link current" href="./index.html">Studio</a></li>
             <li><a class="header-nav__link" href="./portfolio.html">Portfolio</a></li>
             <li><a class="header-nav__link" href="./contacts.html">Contacts</a></li>
         </ul>
         <div class="header-nav__contacts">
-            <a class="header-nav__contacts--item" href="info@devstudio.com">
+            <a class="header-nav__contacts--item" href="mailto:info@devstudio.com">
                 <svg class="header-nav__icon" width="16" height="12">
                     <use href="./images/icons.svg#mailIcon"></use>
                 </svg>
@@ -47,7 +91,7 @@
     <main>
 <!-- Hero -->
         <section class="hero overlay">
-            <h1 class="hero__title">Effective solutions for <br> your business</h1>
+            <h1 class="hero__title">Effective solutions for your business</h1>
             <button data-modal-open type="button" class="hero__button">Request our service</button>
         </section>
 <!-- Advantages -->
@@ -92,15 +136,15 @@
             <h2>What we do</h2>
             <ul class="doing__list">
                 <li class="doing__item">
-                    <img src="./images/pcImg.jpg" alt="PC apps" width="370">
+                    <img src="./images/doingImgDesktop.jpg" alt="PC apps" width="370">
                     <p class="doing__item--overlay">DESKTOP APPS</p>
                 </li>
                 <li class="doing__item">
-                    <img src="./images/mobileImg.jpg" alt="Mobile apps" width="370">
+                    <img src="./images/doingImgMobile.jpg" alt="Mobile apps" width="370">
                     <p class="doing__item--overlay">MOBILE APPS</p>
                 </li>
                 <li class="doing__item">
-                    <img src="./images/tabletImg.jpg" alt="Tablet apps" width="370">
+                    <img src="./images/doingImgTablet.jpg" alt="Tablet apps" width="370">
                     <p class="doing__item--overlay">DESIGN SOLUTIONS</p>
                 </li>
             </ul>
@@ -112,33 +156,35 @@
             <h2>Our team</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team__img" src="./images/teamImg1.jpg" alt="Ihor Demyanenko">
+                    <img class="team__img team__img--mobile" src="./images/teamImgMobile1.jpg" alt="Ihor Demyanenko">
+                    <img class="team__img team__img--tablet" src="./images/teamImgTablet1.jpg" alt="Ihor Demyanenko">
+                    <img class="team__img team__img--desktop" src="./images/teamImgDesktop1.jpg" alt="Ihor Demyanenko">
                         <h3 class="team__name">Ihor Demyanenko</h3>
                         <p class="job__title">Product Designer</p>
                 <ul class="social__list">
                     <li class="social__item">
-                        <a href="instagram.com">
+                        <a href="http://instagram.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#instagramIcon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="twitter.com">
+                        <a href="http://twitter.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#twitterIcon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="facebook.com">
+                        <a href="http://facebook.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#facebookIcon"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="linkedin.com">
+                        <a href="http://linkedin.com">
                             <svg class="social__icon">
                                 <use href="./images/icons.svg#linkedinIcon"></use>
                             </svg>
@@ -147,33 +193,35 @@
                 </ul>
                 </li>
                 <li class="team__item">
-                  <img class="team__img" src="./images/teamImg2.jpg" alt="Olga Repina" width="270">
+                    <img class="team__img team__img--mobile" src="./images/teamImgMobile2.jpg" alt="Olga Repina">
+                    <img class="team__img team__img--tablet" src="./images/teamImgTablet2.jpg" alt="Olga Repina">
+                    <img class="team__img team__img--desktop" src="./images/teamImgDesktop2.jpg" alt="Olga Repina">
                         <h3 class="team__name">Olga Repina</h3>
                         <p class="job__title">Frontend Developer</p>
                     <ul class="social__list">
                         <li class="social__item">
-                            <a href="instagram.com">
+                            <a href="http://instagram.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#instagramIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="twitter.com">
+                            <a href="http://twitter.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#twitterIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="facebook.com">
+                            <a href="http://facebook.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#facebookIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="linkedin.com">
+                            <a href="http://linkedin.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#linkedinIcon"></use>
                                 </svg>
@@ -182,33 +230,35 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                  <img class="team__img" src="./images/teamImg3.jpg" alt="Mykola Tarasov" width="270">
+                    <img class="team__img team__img--mobile" src="./images/teamImgMobile3.jpg" alt="Mykola Tarasov">
+                    <img class="team__img team__img--tablet" src="./images/teamImgTablet3.jpg" alt="Mykola Tarasov">
+                    <img class="team__img team__img--desktop" src="./images/teamImgDesktop3.jpg" alt="Mykola Tarasov">
                         <h3 class="team__name">Mykola Tarasov</h3>
                         <p class="job__title">Marketing</p>
                     <ul class="social__list">
                         <li class="social__item">
-                            <a href="instagram.com">
+                            <a href="http://instagram.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#instagramIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="twitter.com">
+                            <a href="http://twitter.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#twitterIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="facebook.com">
+                            <a href="http://facebook.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#facebookIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="linkedin.com">
+                            <a href="http://linkedin.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#linkedinIcon"></use>
                                 </svg>
@@ -217,33 +267,35 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./images/teamImg4.jpg" alt="Mykhailo Yermakov" width="270">
+                    <img class="team__img team__img--mobile" src="./images/teamImgMobile4.jpg" alt="Mykhailo Yermakov">
+                    <img class="team__img team__img--tablet" src="./images/teamImgTablet4.jpg" alt="Mykhailo Yermakov">
+                    <img class="team__img team__img--desktop" src="./images/teamImgDesktop4.jpg" alt="Mykhailo Yermakov">
                         <h3 class="team__name">Mykhailo Yermakov</h3>
                         <p class="job__title">UI Designer</p>
                     <ul class="social__list">
                         <li class="social__item">
-                            <a href="instagram.com">
+                            <a href="http://instagram.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#instagramIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="twitter.com">
+                            <a href="http://twitter.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#twitterIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="facebook.com">
+                            <a href="http://facebook.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#facebookIcon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a href="linkedin.com">
+                            <a href="http://linkedin.com">
                                 <svg class="social__icon">
                                     <use href="./images/icons.svg#linkedinIcon"></use>
                                 </svg>
@@ -315,7 +367,7 @@
 <!-- Address -->
         <address class="footer-address-block">
                 <p class="footer__address">Kyiv, 26 Lesi Ukrainky Ave</p>
-                <a class="footer__item email" href="info@devstudio.com">info@devstudio.com</a> <br>
+                <a class="footer__item email" href="mailto:info@devstudio.com">info@devstudio.com</a> <br>
                 <a class="footer__item" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
     </div>
@@ -324,28 +376,28 @@
             <strong class="follow__title">FOLLOW US</strong>
             <ul class="follow__list">
                 <li class="follow__item">
-                    <a href="instagram.com">
+                    <a href="http://instagram.com">
                         <svg class="social__icon">
                             <use href="./images/icons.svg#instagramIcon"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="follow__item">
-                    <a href="twitter.com">
+                    <a href="http://twitter.com">
                         <svg class="social__icon">
                             <use href="./images/icons.svg#twitterIcon"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="follow__item">
-                    <a href="facebook.com">
+                    <a href="http://facebook.com">
                         <svg class="social__icon">
                             <use href="./images/icons.svg#facebookIcon"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="follow__item">
-                    <a href="linkedin.com">
+                    <a href="http://linkedin.com">
                         <svg class="social__icon">
                             <use href="./images/icons.svg#linkedinIcon"></use>
                         </svg>
@@ -370,7 +422,8 @@
         </div>
     </div>
     </footer>
-<!-- MODAL -->
+
+<!-- MODAL HERO -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close class="close__button">
@@ -419,12 +472,13 @@
                     <use class="icon__unchecked" href="./images/icons.svg#uncheckIcon"></use>
                     <use class="icon__checked" href="./images/icons.svg#checkIcon"></use>
                 </svg>
-                I agree and accept<a href=""><span class="text__agreement">The terms of the agreement</span></a>
+                I agree and accept the<a href=""><span class="text__agreement">Terms of the agreement</span></a>
                 </label>
                 <button class="submit__button" type="submit">Submit</button>
               </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
