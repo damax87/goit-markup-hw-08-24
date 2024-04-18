@@ -49,30 +49,6 @@
     }
 }
 
-.team__img.team__img--mobile {
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
-
-.team__img.team__img--tablet {
-
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
-
-.team__img.team__img--desktop {
-
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
-}
-
 .team__name {
     font-size: 16px;
     font-weight: 500;
